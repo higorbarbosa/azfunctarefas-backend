@@ -1,0 +1,19 @@
+{
+	"$schema": "http://json.schemastore.org/proxies",
+	"proxies": {
+		"proxyHomePage": {
+			"matchCondition": {
+				"methods": [ "GET" ],
+				"route": "/"
+			},
+			"backendUri": "https://%site%/index.html"
+		},
+		"proxyContent": {
+			"matchCondition": {
+				"methods": [ "GET" ],
+				"route": "/content/{*restOfPath}"
+			},
+			"backendUri": "https:/%site%/content/{restOfPath}"
+		}
+	}
+}
