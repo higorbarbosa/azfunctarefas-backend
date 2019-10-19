@@ -13,7 +13,7 @@
 				"methods": [ "GET" ],
 				"route": "/content/{*restOfPath}"
 			},
-			"backendUri": "https:/%site%/content/{restOfPath}"
+			"backendUri": "https://%site%/content/{restOfPath}"
 		}
 	}
 }
